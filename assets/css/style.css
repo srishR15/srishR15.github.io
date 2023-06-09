@@ -114,7 +114,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .resume-links {
-  margin-top: 0px;
   display: flex;
 }
 
@@ -145,9 +144,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 30px;
   }
   #header .social-links {
-    margin-top: 15px;
-  }
-  #header .resume-links {
     margin-top: 15px;
   }
   #header .container {
