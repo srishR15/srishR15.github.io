@@ -113,6 +113,25 @@ h1, h2, h3, h4, h5, h6 {
   height: 40px;
 }
 
+#header .resume-links {
+  margin-top: 0px;
+  display: flex;
+}
+
+#header .resume-links a {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  margin-right: 8px;
+  border-radius: 50%;
+  width: 100px;
+  height: 40px;
+}
+
 #header .social-links a:hover {
   background: #1c7d32;
 }
@@ -126,6 +145,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 30px;
   }
   #header .social-links {
+    margin-top: 15px;
+  }
+  #header .resume-links {
     margin-top: 15px;
   }
   #header .container {
