@@ -1,0 +1,80 @@
+<!-- ======= Education Section ======= -->
+<section id="education" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Education</h2>
+    </div>
+    <div class="row" style="justify-content: center;">
+      <!-- TAMU Card -->
+      <div class="col-md-5 col-lg-4 mb-4" data-aos="fade-up" style="display: flex;">
+        <div style="
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 10px;
+          overflow: hidden;
+          transition: transform 0.3s;
+          width: 100%;
+        ">
+          <div style="background: rgba(255, 255, 255, 0); text-align: center; padding: 20px 0;">
+            <img src="assets/img/education/tamu.jpg" style="
+              height: 300px;
+              width: auto;
+              object-fit: contain;
+              padding: 10px;
+            " alt="Texas A&M University">
+          </div>
+          <div style="padding: 15px 20px 20px;">
+            <h4 style="color: #d6121cc2; margin-top: 10px; font-size: 1.2rem;">Texas A&M University</h4>
+            <p style="color: #fff; font-size: 0.95rem;"><em>Masters in Computer Science</em></p>
+            <p style="color: #aaa; font-size: 0.9rem;">August 2022 - May 2024</p>
+            <h6 style="color: #ddd; margin-top: 15px; font-size: 0.9rem;">Relevant Coursework</h6>
+            <ul style="color: #ccc; font-size: 0.85rem; padding-left: 20px;">
+              <li style="margin-bottom: 5px;">Software Engineering</li>
+              <li style="margin-bottom: 5px;">Analysis of Algorithms</li>
+              <li style="margin-bottom: 5px;">Deep Learning</li>
+              <li style="margin-bottom: 5px;">Data Mining & Analysis</li>
+              <li style="margin-bottom: 5px;">Cloud Computing & Distributed Systems</li>
+              <li style="margin-bottom: 5px;">Databases</li>
+              <li style="margin-bottom: 5px;">Artificial Intelligence</li>
+              <li style="margin-bottom: 5px;">Parallel Computing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- MIT Card -->
+      <div class="col-md-5 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100" style="display: flex;">
+        <div style="
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 10px;
+          overflow: hidden;
+          transition: transform 0.3s;
+          width: 100%;
+        ">
+          <div style="background: rgba(255, 255, 255, 0); text-align: center; padding: 20px 0;">
+            <img src="assets/img/education/MITlogo.jpg" style="
+              height: 300px;
+              width: auto;
+              object-fit: contain;
+              padding: 10px;
+            " alt="Manipal Academy">
+          </div>
+          <div style="padding: 15px 20px 20px;">
+            <h4 style="color: #d68812e3; margin-top: 10px; font-size: 1.2rem;">Manipal Institute of Technology</h4>
+            <p style="color: #fff; font-size: 0.95rem;"><em>B.Tech in Computer Science (Big Data)</em></p>
+            <p style="color: #aaa; font-size: 0.9rem;">July 2018 - July 2022</p>
+            <h6 style="color: #ddd; margin-top: 15px; font-size: 0.9rem;">Relevant Coursework</h6>
+            <ul style="color: #ccc; font-size: 0.85rem; padding-left: 20px;">
+              <li style="margin-bottom: 5px;">Database Management Systems</li>
+              <li style="margin-bottom: 5px;">Operating Systems</li>
+              <li style="margin-bottom: 5px;">Data Structures & Algorithms</li>
+              <li style="margin-bottom: 5px;">Parallel Algorithms</li>
+              <li style="margin-bottom: 5px;">Object Oriented Programming</li>
+              <li style="margin-bottom: 5px;">Computer Architecture</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- End Education Section -->
