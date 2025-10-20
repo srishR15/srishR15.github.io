@@ -100,19 +100,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a {
-  font-size: 16px;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
   line-height: 1;
-  margin-right: 8px;
+  margin-right: 10px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0 rgba(34, 228, 228, 0);
+  will-change: transform;
+}
+#header .social-links a:hover {
+  background: #22e4e4;
+  color: #0a192f;
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 0 15px rgba(34, 228, 228, 0.6);
 }
 
+#header .social-links a.linkedin:hover {
+  background: #0a66c2;
+  box-shadow: 0 0 15px rgba(10, 102, 194, 0.6);
+}
+#header .social-links a.github:hover {
+  background: #333;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+#header .social-links a.google:hover {
+  background: #ea4335;
+  box-shadow: 0 0 15px rgba(234, 67, 53, 0.6);
+}
 #header .resume-links {
   display: flex;
 }
@@ -126,13 +147,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   line-height: 1;
   margin-right: 8px;
-  border-radius: 50%;
+  border-radius: 50px;
   width: 100px;
   height: 40px;
+  transition: all 0.3s ease;
 }
 
-#header .social-links a:hover {
-  background: #1c7d32;
+#header .resume-links a:hover {
+  background: #22e4e4;
+  color: #0a192f;
+  transform: translateY(-3px);
+  box-shadow: 0 0 10px rgba(34, 228, 228, 0.6);
 }
 
 @media (max-width: 992px) {
@@ -152,6 +177,30 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
 }
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(34, 228, 228, 0);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(34, 228, 228, 0.5);
+    transform: scale(1.03);
+  }
+}
+
+/* Idle glowing effect for social icons */
+#header .social-links a {
+  animation: glowPulse 4s ease-in-out infinite;
+  animation-play-state: running;
+}
+
+/* Pause the idle animation on hover for crisp interaction */
+#header .social-links a:hover {
+  animation-play-state: paused;
+}
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -1302,7 +1351,7 @@ button[aria-expanded="true"] .arrow {
 }
 
 .skill-card {
-  background: rgba(221, 48, 48, 0.05);
+  background: rgba(255, 255, 255, 0.089);
   border-radius: 20px;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 20px rgba(233, 86, 86, 0.3);
@@ -1314,6 +1363,7 @@ button[aria-expanded="true"] .arrow {
 .skill-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 25px rgba(100, 255, 218, 0.3);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .skill-card h4 {
@@ -1333,8 +1383,9 @@ button[aria-expanded="true"] .arrow {
 .skills-grid img {
   height: 55px;
   width: auto;
-  filter: grayscale(80%) brightness(0.9);
+  filter: brightness(1.2) contrast(1.05) grayscale(40%);
   transition: all 0.3s ease;
+  opacity: 0.95;
 }
 
 .skills-grid img:hover {
